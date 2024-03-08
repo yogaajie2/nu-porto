@@ -4,6 +4,17 @@ export default {
 
   theme: {
     extend: {
+      animation: {
+        "fade-in-out": "fade-in-out 500ms infinite alternate",
+      },
+
+      keyframes: {
+        "fade-in-out": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+      },
+
       screens: {
         "3xl": "1920px",
         "4xl": "2560px",

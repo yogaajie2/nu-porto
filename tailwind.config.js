@@ -6,12 +6,18 @@ export default {
     extend: {
       animation: {
         "fade-in-out": "fade-in-out 500ms infinite alternate",
+        typed: "typed 0.75s steps(15, end) 2s both",
       },
 
       keyframes: {
         "fade-in-out": {
           from: { opacity: "0" },
           to: { opacity: "1" },
+        },
+
+        typed: {
+          from: { width: "0" },
+          to: { width: "100%" },
         },
       },
 

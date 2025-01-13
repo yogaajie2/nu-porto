@@ -14,13 +14,37 @@ import "@fontsource-variable/asap";
 
   <body>
     <main
-      class="flex h-screen w-screen flex-col items-center justify-center gap-8 bg-dark-blue text-green"
+      class="glow flex h-screen w-screen flex-col items-center justify-center gap-8 bg-dark-blue text-green"
     >
-      <h1 class="font-heading text-5xl">
-        // Momentum <span class="animate-fade-in-out">_</span>
-      </h1>
+      <div class="mx-auto flex font-heading text-5xl">
+        <span class="mr-4">//</span>
+
+        <h1 class="flex w-0 animate-typed overflow-hidden whitespace-nowrap">
+          Momentum
+        </h1>
+
+        <span class="animate-fade-in-out">_</span>
+      </div>
 
       <h2 class="font-body text-2xl">Hello World</h2>
     </main>
   </body>
 </html>
+
+<!-- <script>
+  const bg = document.querySelector("main");
+
+  bg?.addEventListener("mousemove", function (event) {
+    // Calculate x and y positions
+    var x = event.pageX - this.offsetLeft;
+    var y = event.pageY - this.offsetTop;
+
+    // Apply the gradient
+    this.style.background = `radial-gradient(circle at ${x}px ${y}px, #123625 0%, #0f172a 350px)`;
+  });
+
+  bg?.addEventListener("mouseleave", function () {
+    // Reset the background color
+    this.style.background = "#0f172a";
+  });
+</script> -->

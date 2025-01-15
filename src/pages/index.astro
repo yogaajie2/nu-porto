@@ -16,23 +16,56 @@ import "@fontsource-variable/asap";
     <main
       class="glow flex h-screen w-screen flex-col items-center justify-center gap-8 bg-dark-blue text-green"
     >
-      <div class="mx-auto flex font-heading text-5xl">
-        <span class="mr-4">//</span>
+      <header class="fixed top-0 w-screen font-heading text-xl">
+        <nav class="mx-auto flex w-1/2 items-center text-center">
+          <a class="nav-link group w-1/3 py-8" href="#about"
+            ><span
+              class="mr-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              >//</span
+            >About</a
+          >
 
-        <h1 class="flex w-0 animate-typed overflow-hidden whitespace-nowrap">
-          Momentum
-        </h1>
+          <a class="nav-link group w-1/3 py-8" href="#projects"
+            ><span
+              class="mr-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              >//</span
+            >Projects</a
+          >
 
-        <span class="animate-fade-in-out">_</span>
-      </div>
+          <a class="nav-link group w-1/3 py-8" href="#contact"
+            ><span
+              class="mr-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              >//</span
+            >Contact</a
+          >
+        </nav>
+      </header>
 
-      <h2 class="font-body text-2xl">Hello World</h2>
+      <section>
+        <div class="mx-auto flex font-heading text-5xl">
+          <span
+            class="mr-4 transition-opacity duration-300 ease-in-out"
+            id="titleSlash">//</span
+          >
+
+          <h1
+            class="flex w-0 animate-[typed_0.75s_steps(15,_end)_2s_both] overflow-hidden whitespace-nowrap"
+          >
+            Momentum
+          </h1>
+
+          <span class="animate-fade-in-out">_</span>
+        </div>
+
+        <!-- <h2 class="animate-fade-in font-body text-2xl opacity-0">Hello World</h2> -->
+      </section>
     </main>
   </body>
 </html>
 
-<!-- <script>
-  const bg = document.querySelector("main");
+<script>
+  // Cursor glow effect
+  /* const bg = document.querySelector("main");
 
   bg?.addEventListener("mousemove", function (event) {
     // Calculate x and y positions
@@ -46,5 +79,21 @@ import "@fontsource-variable/asap";
   bg?.addEventListener("mouseleave", function () {
     // Reset the background color
     this.style.background = "#0f172a";
-  });
-</script> -->
+  }); */
+
+  const navLinks = document.querySelectorAll(".nav-link");
+  const titleSlash = document.querySelector("#titleSlash");
+
+  navLinks.forEach((navLink) =>
+    navLink.addEventListener("mouseover", () => {
+      console.log("over");
+      titleSlash?.classList.add("opacity-0");
+    })
+  );
+
+  navLinks.forEach((navLink) =>
+    navLink.addEventListener("mouseleave", () => {
+      titleSlash?.classList.remove("opacity-0");
+    })
+  );
+</script>

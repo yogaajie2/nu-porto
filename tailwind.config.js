@@ -5,12 +5,13 @@ export default {
   theme: {
     extend: {
       animation: {
-        "fade-in-out": "fade-in-out 500ms infinite alternate",
-        typed: "typed 0.75s steps(15, end) 2s both",
+        "fade-in": "fade-in 500ms 3s forwards",
+        "fade-in-out": "fade-in 500ms infinite alternate",
+        // typed: "typed 0.75s steps(15, end) 2s both",
       },
 
       keyframes: {
-        "fade-in-out": {
+        "fade-in": {
           from: { opacity: "0" },
           to: { opacity: "1" },
         },

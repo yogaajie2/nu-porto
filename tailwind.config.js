@@ -6,7 +6,9 @@ export default {
     extend: {
       animation: {
         "fade-in": "fade-in 500ms 3s forwards",
-        "fade-in-out": "fade-in 500ms infinite alternate",
+        "fade-in-out": "fade-in 500ms 2s infinite alternate",
+        opening: "opening 1.5s",
+        "slide-down": "slide-down 0.5s 2s both, fade-in 0.5s 2s both",
         // typed: "typed 0.75s steps(15, end) 2s both",
       },
 
@@ -14,6 +16,18 @@ export default {
         "fade-in": {
           from: { opacity: "0" },
           to: { opacity: "1" },
+        },
+
+        opening: {
+          "0%": { opacity: "0", left: "50%" },
+          "50%": { opacity: "1", left: "50%" },
+          "75%": { opacity: "1", left: "50%" },
+          "100%": { opacity: "1", left: "0%" },
+        },
+
+        "slide-down": {
+          "0%": { top: "-4rem" },
+          "100%": { top: "0rem" },
         },
 
         typed: {

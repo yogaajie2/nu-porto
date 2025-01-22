@@ -16,7 +16,7 @@ import "@fontsource-variable/asap";
     <main
       class="glow flex h-screen w-screen flex-col items-center justify-center gap-8 bg-dark-blue text-green"
     >
-      <header class="fixed top-0 w-screen font-heading text-xl">
+      <header class="animate-slide-down fixed w-screen font-heading text-xl">
         <nav class="mx-auto flex w-1/2 items-center text-center">
           <a class="nav-link group w-1/3 py-8" href="#about"
             ><span
@@ -44,17 +44,20 @@ import "@fontsource-variable/asap";
       <section>
         <div class="mx-auto flex font-heading text-5xl">
           <span
-            class="mr-4 transition-opacity duration-300 ease-in-out"
+            class="animate-opening relative mr-4 transition-opacity duration-300 ease-in-out"
             id="titleSlash">//</span
           >
 
           <h1
-            class="flex w-0 animate-[typed_0.75s_steps(15,_end)_2s_both] overflow-hidden whitespace-nowrap"
+            class="flex w-0 animate-[typed_0.75s_steps(15,_end)_1.5s_both] overflow-hidden whitespace-nowrap"
           >
             Momentum
           </h1>
 
-          <span class="animate-fade-in-out">_</span>
+          <span
+            class="animate-[fade-in_500ms_1.5s_infinite_alternate] opacity-0"
+            >_</span
+          >
         </div>
 
         <!-- <h2 class="animate-fade-in font-body text-2xl opacity-0">Hello World</h2> -->

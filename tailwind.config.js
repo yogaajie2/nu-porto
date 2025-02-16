@@ -51,6 +51,17 @@ export default {
       white: "#fff",
     },
 
+    container: {
+      center: true,
+
+      padding: {
+        DEFAULT: "2rem",
+        md: "4rem",
+        lg: "6rem",
+        xl: "8rem",
+      },
+    },
+
     fontFamily: {
       heading: ["Chakra Petch", "sans-serif"],
       body: ["Asap Variable", "sans-serif"],

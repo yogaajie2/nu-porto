@@ -62,7 +62,7 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
       </section>
 
       <!-- About -->
-      <section class="container flex gap-16">
+      <section class="container flex h-screen gap-16">
         <Image alt="" class="h-[500px] hue-rotate-[328deg]" src={photo} />
 
         <div>
@@ -83,6 +83,40 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
             </p>
           </div>
         </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="container flex h-screen w-full gap-16">
+        <h3 class="font-heading text-4xl">Let's work together</h3>
+
+        <form
+          action=""
+          class="mt-12 grid h-1/2 grid-cols-2 gap-8"
+          method="post"
+        >
+          <input
+            class="border-b-2 bg-transparent outline-none"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            type="text"
+          />
+
+          <input
+            class="border-b-2 bg-transparent outline-none"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            type="email"
+          />
+
+          <textarea
+            class="col-span-full border-b-2 bg-transparent outline-none"
+            id="message"
+            name="message"
+            placeholder="What do you have in mind?"
+            rows="3"></textarea>
+        </form>
       </section>
     </main>
   </body>

@@ -3,7 +3,7 @@
 ## Required:
 
 - [ ] Add about page
-  - [ ] Content
+  - [x] Content
   - [ ] Styling
 - [ ] Add projects page
   - [ ] Content

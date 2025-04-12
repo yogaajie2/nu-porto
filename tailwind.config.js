@@ -46,6 +46,7 @@ export default {
       black: "#000",
       current: "currentColor",
       "dark-blue": "#0f172a",
+      "dark-blue-lighter": "#16213c",
       green: "#00FF83",
       transparent: "transparent",
       white: "#fff",

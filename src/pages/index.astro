@@ -131,7 +131,8 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
       </section>
 
       <nav
-        class="bg-dark-blue-lighter fixed bottom-0 z-10 flex w-screen py-4 text-center lg:hidden"
+        class="fixed bottom-0 z-10 flex w-screen translate-y-full bg-dark-blue-lighter py-4 text-center transition-transform duration-500 lg:hidden"
+        id="mobileNavbar"
       >
         <a class="w-1/4" href="#home">//</a>
 
@@ -189,4 +190,20 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
       titleSlash?.classList.remove("opacity-0");
     })
   );
+
+  // Scroll detection
+  const navbar = document.querySelector("#mobileNavbar");
+  let scrollPos = 0;
+
+  window.addEventListener("scroll", () => {
+    // Detects new state and compares it with the new one
+    if (document.body.getBoundingClientRect().top > scrollPos) {
+      navbar?.classList.remove("translate-y-full");
+    } else {
+      navbar?.classList.add("translate-y-full");
+    }
+
+    // Saves the new position for iteration.
+    scrollPos = document.body.getBoundingClientRect().top;
+  });
 </script>

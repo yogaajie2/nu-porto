@@ -473,9 +473,13 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
     })
   );
 
-  // Scroll detection
+  // Mobile navbar
   const navbar = document.querySelector("#mobileNavbar");
   let scrollPos = 0;
+
+  setTimeout(() => {
+    navbar?.classList.remove("translate-y-full");
+  }, 2000);
 
   window.addEventListener("scroll", () => {
     // Detects new state and compares it with the new one

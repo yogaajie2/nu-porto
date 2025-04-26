@@ -72,17 +72,13 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
         class="container flex h-screen flex-col gap-16 lg:flex-row"
         id="about"
       >
-        <div class="flex w-fit items-center font-heading text-3xl">
+        <div class="section-name flex w-fit items-center font-heading text-3xl">
           <span
-            class="relative mr-4 animate-opening transition-opacity duration-300 ease-in-out"
+            class="relative mr-4 transition-opacity duration-300 ease-in-out"
             id="titleSlash">//</span
           >
 
-          <h2
-            class="flex w-0 animate-[typed_0.75s_steps(15,_end)_1.5s_both] overflow-hidden whitespace-nowrap"
-          >
-            About
-          </h2>
+          <h2 class="flex w-0 overflow-hidden whitespace-nowrap">About</h2>
         </div>
 
         <Image
@@ -113,17 +109,13 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
 
       <!-- Projects -->
       <section class="container relative h-screen" id="projects">
-        <div class="flex w-fit items-center font-heading text-3xl">
+        <div class="section-name flex w-fit items-center font-heading text-3xl">
           <span
-            class="relative mr-4 animate-opening transition-opacity duration-300 ease-in-out"
+            class="relative mr-4 transition-opacity duration-300 ease-in-out"
             id="titleSlash">//</span
           >
 
-          <h2
-            class="flex w-0 animate-[typed_0.75s_steps(15,_end)_1.5s_both] overflow-hidden whitespace-nowrap"
-          >
-            Projects
-          </h2>
+          <h2 class="flex w-0 overflow-hidden whitespace-nowrap">Projects</h2>
         </div>
 
         <div class="swiper mt-4 h-[30vh] w-full">
@@ -199,17 +191,13 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
         class="container flex h-screen flex-col justify-center text-center lg:flex-row"
         id="contact"
       >
-        <div class="flex w-fit items-center font-heading text-3xl">
+        <div class="section-name flex w-fit items-center font-heading text-3xl">
           <span
-            class="relative mr-4 animate-opening transition-opacity duration-300 ease-in-out"
+            class="relative mr-4 transition-opacity duration-300 ease-in-out"
             id="titleSlash">//</span
           >
 
-          <h2
-            class="flex w-0 animate-[typed_0.75s_steps(15,_end)_1.5s_both] overflow-hidden whitespace-nowrap"
-          >
-            Contact
-          </h2>
+          <h2 class="flex w-0 overflow-hidden whitespace-nowrap">Contact</h2>
         </div>
 
         <h3 class="mt-24 font-heading text-2xl lg:w-1/3">
@@ -472,6 +460,25 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
       titleSlash?.classList.remove("opacity-0");
     })
   );
+
+  // Headings intersection observer
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio > 0) {
+        const name = entry.target.querySelector("h2");
+        const slash = entry.target.querySelector("span");
+
+        name?.classList.add("animate-typed-section");
+        slash?.classList.add("animate-fade-in-section");
+      }
+    });
+  });
+
+  const elements = document.querySelectorAll(".section-name");
+
+  elements.forEach((element) => {
+    io.observe(element);
+  });
 
   // Mobile navbar
   const navbar = document.querySelector("#mobileNavbar");

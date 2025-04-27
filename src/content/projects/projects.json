@@ -1,0 +1,25 @@
+[
+  {
+    "image": "https://picsum.photos/seed/1/350",
+    "title": "Lorem Ipsum",
+    "year": "2025",
+    "summary": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"]
+  },
+
+  {
+    "image": "https://picsum.photos/seed/2/350",
+    "title": "Lorem Ipsum",
+    "year": "2025",
+    "summary": "Sed in augue neque. Vestibulum et est bibendum, laoreet massa nec, fringilla urna. Suspendisse tincidunt nulla ut aliquet convallis.",
+    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"]
+  },
+
+  {
+    "image": "https://picsum.photos/seed/3/350",
+    "title": "Lorem Ipsum",
+    "year": "2025",
+    "summary": "Vestibulum interdum in nulla vitae molestie. Phasellus faucibus mi eget mattis gravida. Integer a magna nulla. In hac habitasse platea.",
+    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"]
+  }
+]

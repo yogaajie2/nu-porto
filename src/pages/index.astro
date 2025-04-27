@@ -3,6 +3,7 @@ import "@fontsource/chakra-petch";
 import "@fontsource-variable/asap";
 import "swiper/css";
 import { Image } from "astro:assets";
+import projects from "../content/projects/projects.json";
 import photo from "../images/profile-styled-circle-alt-compressed.png";
 ---
 
@@ -57,7 +58,7 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
         >
 
         <h1
-          class="animate-typed-title flex w-0 overflow-hidden whitespace-nowrap"
+          class="flex w-0 animate-typed-title overflow-hidden whitespace-nowrap"
         >
           Momentum
         </h1>
@@ -118,71 +119,89 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
           <h2 class="flex w-0 overflow-hidden whitespace-nowrap">Projects</h2>
         </div>
 
-        <div class="swiper mt-4 h-[30vh] w-full">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <Image
-                alt=""
-                height="300"
-                src="https://picsum.photos/seed/1/350"
-                width="350"
-              />
-            </div>
-
-            <div class="swiper-slide">
-              <Image
-                alt=""
-                height="300"
-                src="https://picsum.photos/seed/2/350"
-                width="350"
-              />
-            </div>
-
-            <div class="swiper-slide">
-              <Image
-                alt=""
-                height="300"
-                src="https://picsum.photos/seed/3/350"
-                width="350"
-              />
-            </div>
+        <nav
+          class="absolute left-0 top-[225px] z-10 flex w-full items-center justify-between gap-4 px-10 text-green"
+        >
+          <div
+            class="swiper-button-prev rounded bg-dark-blue bg-opacity-65 p-1"
+          >
+            <svg
+              class="size-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
           </div>
 
-          <nav
-            class="absolute bottom-0 right-0 z-10 flex items-center gap-4 text-green"
+          <div
+            class="swiper-button-next rounded bg-dark-blue bg-opacity-65 p-1"
           >
-            <div class="swiper-button-prev">
-              <svg
-                class="size-12"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.75 19.5 8.25 12l7.5-7.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-              </svg>
-            </div>
+            <svg
+              class="size-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </nav>
 
-            <div class="swiper-button-next">
-              <svg
-                class="size-12"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-              </svg>
-            </div>
-          </nav>
+        <div class="swiper mt-8 h-5/6 w-full">
+          <div class="swiper-wrapper">
+            {
+              projects.map((project) => (
+                <div class="swiper-slide !flex flex-col">
+                  <Image
+                    alt=""
+                    class="rounded"
+                    height="300"
+                    src={project.image}
+                    width="350"
+                  />
+
+                  <section class="mt-6">
+                    <h2 class="flex font-heading text-2xl">
+                      {project.title}{" "}
+                      <span class="ml-auto">{project.year}</span>
+                    </h2>
+
+                    <p class="mt-4 font-body">{project.summary}</p>
+                  </section>
+
+                  <section class="mt-8">
+                    <p class="text-center font-body text-lg">
+                      Tech stacks used
+                    </p>
+
+                    <div class="mt-4 flex flex-wrap gap-2">
+                      {project.stacks.map((stack) => (
+                        <p class="rounded-full border-[1px] border-green px-4 py-2">
+                          {stack}
+                        </p>
+                      ))}
+                    </div>
+                  </section>
+
+                  <button class="mt-auto w-full rounded bg-dark-blue-lighter py-4 font-heading text-xl">
+                    <p>View project</p>
+                  </button>
+                </div>
+              ))
+            }
+          </div>
         </div>
       </section>
 

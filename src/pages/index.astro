@@ -52,23 +52,32 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
 
       <!-- Index -->
       <section
-        class="flex h-screen items-center pb-60 font-heading text-5xl lg:pb-0"
+        class="flex h-screen flex-col items-center justify-center pb-60 lg:pb-0"
         id="home"
       >
-        <span
-          class="relative mr-4 animate-opening transition-opacity duration-300 ease-in-out"
-          id="titleSlash">//</span
-        >
+        <div class="flex font-heading text-5xl">
+          <span
+            class="relative mr-4 animate-opening transition-opacity duration-300 ease-in-out"
+            id="titleSlash">//</span
+          >
 
-        <h1
-          class="flex w-0 animate-typed-title overflow-hidden whitespace-nowrap"
-        >
-          Momentum
-        </h1>
+          <h1
+            class="flex w-0 animate-typed-title overflow-hidden whitespace-nowrap"
+          >
+            Momentum
+          </h1>
 
-        <span class="animate-[fade-in_500ms_1.5s_infinite_alternate] opacity-0"
-          >_</span
+          <span
+            class="animate-[fade-in_500ms_1.5s_infinite_alternate] opacity-0"
+            >_</span
+          >
+        </div>
+
+        <p
+          class="animate-slide-down-subtitle -mt-8 ml-2 text-center font-body text-lg opacity-0"
         >
+          Web & Apps Development
+        </p>
       </section>
 
       <!-- About -->

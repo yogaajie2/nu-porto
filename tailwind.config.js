@@ -7,9 +7,12 @@ export default {
       animation: {
         "fade-in": "fade-in 500ms 3s forwards",
         "fade-in-out": "fade-in 500ms 2s infinite alternate",
+        "fade-in-project-year": "fade-in 500ms 1s forwards",
+        "fade-in-project-summary": "fade-in 500ms 1.5s forwards",
         "fade-in-section": "fade-in 500ms forwards",
         opening: "opening 1.5s",
         "slide-down": "slide-down 0.5s 2s both, fade-in 0.5s 2s both",
+        "typed-project-title": "typed 750ms steps(25, end) 500ms both",
         "typed-section": "typed 500ms steps(10, end) 500ms both",
         "typed-title": "typed 0.75s steps(15, end) 1.5s both",
       },

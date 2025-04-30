@@ -12,6 +12,10 @@ export default {
         "fade-in-section": "fade-in 500ms forwards",
         opening: "opening 1.5s",
         "slide-down": "slide-down 0.5s 2s both, fade-in 0.5s 2s both",
+
+        "slide-down-subtitle":
+          "slide-down-subtitle 0.5s 2s both, fade-in 0.5s 2s both",
+
         "typed-project-title": "typed 750ms steps(25, end) 500ms both",
         "typed-section": "typed 500ms steps(10, end) 500ms both",
         "typed-title": "typed 0.75s steps(15, end) 1.5s both",
@@ -33,6 +37,11 @@ export default {
         "slide-down": {
           "0%": { top: "-4rem" },
           "100%": { top: "0rem" },
+        },
+
+        "slide-down-subtitle": {
+          "0%": { "margin-top": "-2rem" },
+          "100%": { "margin-top": "0rem" },
         },
 
         typed: {

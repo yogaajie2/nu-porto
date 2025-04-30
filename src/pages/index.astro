@@ -175,12 +175,17 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
                   />
 
                   <section class="mt-3 lg:mt-6">
-                    <h2 class="flex font-heading text-xl lg:text-2xl">
-                      {project.title}{" "}
-                      <span class="ml-auto">{project.year}</span>
-                    </h2>
+                    <div class="flex font-heading text-xl lg:text-2xl">
+                      <h2 class="w-0 overflow-hidden whitespace-nowrap">
+                        {project.title}
+                      </h2>
 
-                    <p class="mt-2 font-body lg:mt-4">{project.summary}</p>
+                      <span class="ml-auto opacity-0">{project.year}</span>
+                    </div>
+
+                    <p class="summary mt-2 font-body opacity-0 lg:mt-4">
+                      {project.summary}
+                    </p>
                   </section>
 
                   <section class="mx-1 mt-16">
@@ -188,12 +193,19 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
                       Tech stacks used
                     </p>
 
-                    <div class="mt-4 flex flex-wrap gap-2">
-                      {project.stacks.map((stack) => (
-                        <p class="rounded-full border-[1px] border-green px-2 py-1">
-                          {stack}
-                        </p>
-                      ))}
+                    <div class="group mt-4 flex flex-wrap gap-2">
+                      {project.stacks.map((stack, index) => {
+                        const delay = 2000 + index * 200;
+
+                        return (
+                          <p
+                            class="rounded-full border-[1px] border-green px-2 py-1 opacity-0 group-[.active]:animate-[fade-in_500ms_forwards]"
+                            style={`animation-delay: ${delay}ms;`}
+                          >
+                            {stack}
+                          </p>
+                        );
+                      })}
                     </div>
                   </section>
 
@@ -535,5 +547,19 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+
+  const slides = document.querySelectorAll(".swiper-slide");
+
+  swiper.on("slideChange", (swiper) => {
+    const slide = slides[swiper.activeIndex];
+    slide.querySelector("h2")?.classList.add("animate-typed-project-title");
+    slide.querySelector("span")?.classList.add("animate-fade-in-project-year");
+
+    slide
+      .querySelector(".summary")
+      ?.classList.add("animate-fade-in-project-summary");
+
+    slide.querySelector(".group")?.classList.add("active");
   });
 </script>

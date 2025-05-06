@@ -237,10 +237,31 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
         </div>
 
         <dialog
-          class="fixed top-0 z-20 h-screen w-screen items-center justify-center bg-dark-blue bg-opacity-50 text-green"
+          class="left-1/2 m-0 h-screen max-h-full w-screen max-w-full -translate-x-1/2 bg-dark-blue bg-opacity-50 text-green"
         >
-          <div class="h-[90%] w-[90%] rounded-lg bg-dark-blue-lighter p-6">
-            <h1>This is a dialog</h1>
+          <div
+            class="relative -bottom-16 h-full w-full rounded-lg bg-dark-blue-lighter p-6 opacity-0 transition-opacity"
+          >
+            <button
+              class="absolute right-0 top-0 flex items-center gap-2 p-4"
+              id="closeProject"
+            >
+              <span class="font-heading text-base">Close</span>
+
+              <svg
+                class="size-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 18 18 6M6 6l12 12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
           </div>
         </dialog>
       </section>
@@ -560,6 +581,30 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
     // Saves the new position for iteration.
     scrollPos = document.body.getBoundingClientRect().top;
   });
+
+  // Project dialog
+  const closeProjectButton = document.querySelector("#closeProject"),
+    dialog = document.querySelector("dialog > div"),
+    dialogContainer = document.querySelector("dialog"),
+    viewProjectButtons = document.querySelectorAll(".swiper-slide button");
+
+  closeProjectButton?.addEventListener("click", () => {
+    dialog?.classList.replace("opacity-100", "opacity-0");
+
+    setTimeout(() => {
+      dialogContainer?.close();
+    }, 150);
+  });
+
+  viewProjectButtons.forEach((button, index) => {
+    button.addEventListener("click", () => showDialog(index));
+  });
+
+  function showDialog(index: number) {
+    console.log("show", index);
+    dialogContainer?.showModal();
+    dialog?.classList.replace("opacity-0", "opacity-100");
+  }
 
   // Swiper
   import Swiper from "swiper";

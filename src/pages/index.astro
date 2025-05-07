@@ -235,6 +235,7 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
 
         <dialog
           class="left-1/2 m-0 h-screen max-h-full w-screen max-w-full -translate-x-1/2 overflow-visible bg-dark-blue bg-opacity-50 text-green"
+          id="projectDialog"
         >
           <button
             class="absolute right-0 top-0 flex items-center gap-2 p-6 focus-visible:outline-none"
@@ -675,28 +676,31 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
 
   // Project dialog
   const closeProjectButton = document.querySelector("#closeProject"),
-    dialog = document.querySelector("dialog > div"),
-    dialogContainer = document.querySelector("dialog"),
     html = document.querySelector("html"),
+    imageDialog = document.querySelector("#imageDialog"),
+    projectDialog = document.querySelector("#projectDialog > div"),
+    projectDialogContainer = document.querySelector(
+      "#projectDialog"
+    ) as HTMLDialogElement,
     viewProjectButtons = document.querySelectorAll(".swiper-slide button");
 
   closeProjectButton?.addEventListener("click", () => {
-    dialog?.classList.replace("opacity-100", "opacity-0");
+    projectDialog?.classList.replace("opacity-100", "opacity-0");
     html?.classList.remove("overflow-hidden");
 
     setTimeout(() => {
-      dialogContainer?.close();
+      projectDialogContainer?.close();
     }, 150);
   });
 
   viewProjectButtons.forEach((button, index) => {
-    button.addEventListener("click", () => showDialog(index));
+    button.addEventListener("click", () => showProjectDialog(index));
   });
 
-  function showDialog(index: number) {
+  function showProjectDialog(index: number) {
     console.log("show", index);
-    dialogContainer?.showModal();
-    dialog?.classList.replace("opacity-0", "opacity-100");
+    projectDialogContainer?.showModal();
+    projectDialog?.classList.replace("opacity-0", "opacity-100");
     html?.classList.add("overflow-hidden");
   }
 

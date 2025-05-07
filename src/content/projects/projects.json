@@ -1,25 +1,64 @@
 [
   {
-    "image": "https://picsum.photos/seed/1/350",
-    "title": "Lorem Ipsum",
-    "year": "2025",
+    "description": "Nunc posuere gravida velit, laoreet rutrum mauris vestibulum sit amet. Nam cursus pharetra ante, sed posuere mauris mattis non. Maecenas at tellus ac magna porta mollis. Quisque eleifend posuere tortor sit amet fringilla. In malesuada, dui sit amet scelerisque vehicula, justo est aliquam odio, quis blandit diam quam ut libero. Sed ut urna diam. Vivamus vel malesuada ex, at posuere dolor. Aliquam cursus dictum felis quis ultricies. Quisque tristique risus sagittis risus eleifend aliquet. Nullam leo nulla, volutpat faucibus arcu ut, sagittis pharetra nunc. Sed sagittis rutrum felis, non dignissim diam lacinia sit amet. Maecenas fermentum enim vulputate, consectetur erat sed, condimentum leo. Vivamus scelerisque eros a ligula ornare interdum sed quis turpis. Nulla nulla mi, laoreet eu luctus at, volutpat non mauris. Vestibulum non ligula mauris. Duis imperdiet accumsan suscipit.",
+
+    "images": [
+      "https://picsum.photos/seed/a/400",
+      "https://picsum.photos/seed/b/400",
+      "https://picsum.photos/seed/c/400",
+      "https://picsum.photos/seed/d/400",
+      "https://picsum.photos/seed/e/400",
+      "https://picsum.photos/seed/f/400",
+      "https://picsum.photos/seed/g/400",
+      "https://picsum.photos/seed/h/400"
+    ],
+
+    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
     "summary": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
-    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"]
+    "thumbnail": "https://picsum.photos/seed/1/350",
+    "title": "Lorem Ipsum",
+    "year": "2025"
   },
 
   {
-    "image": "https://picsum.photos/seed/2/350",
-    "title": "Lorem Ipsum",
-    "year": "2025",
+    "description": "Proin ex velit, finibus non scelerisque at, egestas at erat. Duis auctor malesuada nibh sed tincidunt. Integer fringilla vitae leo eget lobortis Pellentesque pellentesque aliquam nulla vel consequat. Sed et sapien congue, ultricies massa in, molestie urna. Curabitur ac eleifend nibh. Sed porta risus sit amet velit aliquet, ac tincidunt orci rutrum. Aenean sit amet turpis et metus tincidunt viverra. Etiam elementum urna non tellus tempus lobortis. Vestibulum a gravida mauris. Morbi a dolor vel augue semper venenatis pulvinar nec dui. Integer sed neque est. Nunc egestas ultrices mollis. Ut at ex iaculis dolor aliquet malesuada. Morbi lectus augue, fermentum at nulla eget, dapibus bibendum orci. Etiam et ullamcorper lectus. Ut vehicula, lacus nec ornare dictum, lectus arcu venenatis justo, at blandit est augue in augue. Donec id egestas nisl, euismod accumsan urna. Nullam quis est nisi. Curabitur eu dui justo. Nam leo dui, pellentesque sit amet rutrum ut, euismod eu mi. Donec sagittis finibus interdum. Donec ac dui ac nisl venenatis gravida quis at est. Ut consectetur et purus sed aliquam. Etiam suscipit dictum lacus vitae lobortis.",
+
+    "images": [
+      "https://picsum.photos/seed/i/400",
+      "https://picsum.photos/seed/j/400",
+      "https://picsum.photos/seed/k/400",
+      "https://picsum.photos/seed/l/400",
+      "https://picsum.photos/seed/m/400",
+      "https://picsum.photos/seed/n/400",
+      "https://picsum.photos/seed/o/400",
+      "https://picsum.photos/seed/p/400"
+    ],
+
+    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
     "summary": "Sed in augue neque. Vestibulum et est bibendum, laoreet massa nec, fringilla urna. Suspendisse tincidunt nulla ut aliquet convallis.",
-    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"]
+    "thumbnail": "https://picsum.photos/seed/2/350",
+    "title": "Lorem Ipsum",
+    "year": "2025"
   },
 
   {
-    "image": "https://picsum.photos/seed/3/350",
-    "title": "Lorem Ipsum",
-    "year": "2025",
+    "description": "Suspendisse eget cursus ex. Fusce efficitur mi ipsum, id consectetur sapien sollicitudin eu. Morbi eleifend lorem ac ullamcorper hendrerit. Nunc facilisis est at viverra mollis. Mauris a nulla sem. Pellentesque quis lorem quis nulla posuere iaculis faucibus ut urna. Pellentesque nunc sapien, pharetra id nisi vitae, scelerisque congue nibh. Nunc viverra metus ac sem vehicula, ac luctus augue iaculis. Nunc mattis, neque sit amet interdum facilisis, urna ligula mollis urna, nec convallis neque felis vel justo. Donec maximus erat erat, quis porta nunc porta in. Nunc consectetur porttitor felis, a consequat risus porta tempus. Quisque tristique ex sed faucibus mollis. Nunc odio elit, accumsan egestas lectus sed, pellentesque tincidunt sem. Vivamus dapibus lacinia magna non ultrices. Sed vel ligula ipsum. Aenean at tortor et ligula ornare fringilla ac ac purus. Sed scelerisque sem eget purus interdum ultrices. Suspendisse tempor tellus vel mauris commodo blandit. Maecenas euismod mi ipsum, quis consectetur nisi convallis et.",
+
+    "images": [
+      "https://picsum.photos/seed/q/400",
+      "https://picsum.photos/seed/r/400",
+      "https://picsum.photos/seed/s/400",
+      "https://picsum.photos/seed/t/400",
+      "https://picsum.photos/seed/u/400",
+      "https://picsum.photos/seed/v/400",
+      "https://picsum.photos/seed/w/400",
+      "https://picsum.photos/seed/x/400"
+    ],
+
+    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
     "summary": "Vestibulum interdum in nulla vitae molestie. Phasellus faucibus mi eget mattis gravida. Integer a magna nulla. In hac habitasse platea.",
-    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"]
+    "thumbnail": "https://picsum.photos/seed/3/350",
+    "title": "Lorem Ipsum",
+    "year": "2025"
   }
 ]

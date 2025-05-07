@@ -7,10 +7,7 @@ import projects from "../content/projects/projects.json";
 import photo from "../images/profile-styled-circle-alt-compressed.png";
 ---
 
-<html
-  class="h-full snap-y snap-mandatory overflow-y-scroll scroll-smooth"
-  lang="en"
->
+<html class="h-full snap-y snap-mandatory scroll-smooth" lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -237,31 +234,125 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
         </div>
 
         <dialog
-          class="left-1/2 m-0 h-screen max-h-full w-screen max-w-full -translate-x-1/2 bg-dark-blue bg-opacity-50 text-green"
+          class="left-1/2 m-0 h-screen max-h-full w-screen max-w-full -translate-x-1/2 overflow-visible bg-dark-blue bg-opacity-50 text-green"
         >
-          <div
-            class="relative -bottom-16 h-full w-full rounded-lg bg-dark-blue-lighter p-6 opacity-0 transition-opacity"
+          <button
+            class="absolute right-0 top-0 flex items-center gap-2 p-6 focus-visible:outline-none"
+            id="closeProject"
           >
-            <button
-              class="absolute right-0 top-0 flex items-center gap-2 p-4"
-              id="closeProject"
-            >
-              <span class="font-heading text-base">Close</span>
+            <span class="font-heading text-base">Close</span>
 
-              <svg
-                class="size-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 18 18 6M6 6l12 12"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></path>
-              </svg>
-            </button>
+            <svg
+              class="size-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18 18 6M6 6l12 12"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </button>
+
+          <div
+            class="relative mt-16 h-full w-full overflow-y-scroll rounded-xl bg-dark-blue-lighter p-6 opacity-0 transition-opacity focus-visible:outline-none"
+          >
+            <div class="flex font-heading text-xl lg:text-2xl">
+              <h2 class="overflow-hidden whitespace-nowrap">Lorem Ipsum</h2>
+              <span class="ml-auto">2025</span>
+            </div>
+
+            <p class="mt-4 font-body lg:mt-4">
+              Nunc posuere gravida velit, laoreet rutrum mauris vestibulum sit
+              amet. Nam cursus pharetra ante, sed posuere mauris mattis non.
+              Maecenas at tellus ac magna porta mollis. Quisque eleifend posuere
+              tortor sit amet fringilla. In malesuada, dui sit amet scelerisque
+              vehicula, justo est aliquam odio, quis blandit diam quam ut
+              libero. Sed ut urna diam. Vivamus vel malesuada ex, at posuere
+              dolor. Aliquam cursus dictum felis quis ultricies. Quisque
+              tristique risus sagittis risus eleifend aliquet.
+              <br />
+              <br />
+              Nullam leo nulla, volutpat faucibus arcu ut, sagittis pharetra nunc.
+              Sed sagittis rutrum felis, non dignissim diam lacinia sit amet. Maecenas
+              fermentum enim vulputate, consectetur erat sed, condimentum leo. Vivamus
+              scelerisque eros a ligula ornare interdum sed quis turpis. Nulla nulla
+              mi, laoreet eu luctus at, volutpat non mauris. Vestibulum non ligula
+              mauris. Duis imperdiet accumsan suscipit.
+            </p>
+
+            <section class="mt-8">
+              <h2 class="flex font-heading text-xl lg:text-2xl">Gallery</h2>
+
+              <div class="mb-16 mt-4 grid grid-cols-2 gap-4">
+                <Image
+                  alt=""
+                  class="rounded"
+                  height="200"
+                  src="https://picsum.photos/seed/a/400"
+                  width="200"
+                />
+
+                <Image
+                  alt=""
+                  class="rounded"
+                  height="200"
+                  src="https://picsum.photos/seed/b/400"
+                  width="200"
+                />
+
+                <Image
+                  alt=""
+                  class="rounded"
+                  height="200"
+                  src="https://picsum.photos/seed/c/400"
+                  width="200"
+                />
+
+                <Image
+                  alt=""
+                  class="rounded"
+                  height="200"
+                  src="https://picsum.photos/seed/d/400"
+                  width="200"
+                />
+
+                <Image
+                  alt=""
+                  class="rounded"
+                  height="200"
+                  src="https://picsum.photos/seed/e/400"
+                  width="200"
+                />
+
+                <Image
+                  alt=""
+                  class="rounded"
+                  height="200"
+                  src="https://picsum.photos/seed/f/400"
+                  width="200"
+                />
+
+                <Image
+                  alt=""
+                  class="rounded"
+                  height="200"
+                  src="https://picsum.photos/seed/g/400"
+                  width="200"
+                />
+
+                <Image
+                  alt=""
+                  class="rounded"
+                  height="200"
+                  src="https://picsum.photos/seed/h/400"
+                  width="200"
+                />
+              </div>
+            </section>
           </div>
         </dialog>
       </section>
@@ -586,10 +677,12 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
   const closeProjectButton = document.querySelector("#closeProject"),
     dialog = document.querySelector("dialog > div"),
     dialogContainer = document.querySelector("dialog"),
+    html = document.querySelector("html"),
     viewProjectButtons = document.querySelectorAll(".swiper-slide button");
 
   closeProjectButton?.addEventListener("click", () => {
     dialog?.classList.replace("opacity-100", "opacity-0");
+    html?.classList.remove("overflow-hidden");
 
     setTimeout(() => {
       dialogContainer?.close();
@@ -604,6 +697,7 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
     console.log("show", index);
     dialogContainer?.showModal();
     dialog?.classList.replace("opacity-0", "opacity-100");
+    html?.classList.add("overflow-hidden");
   }
 
   // Swiper

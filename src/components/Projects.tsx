@@ -193,7 +193,7 @@ const Projects = () => {
         </div>
 
         <dialog
-          class="flex h-screen max-h-full max-w-full items-center justify-center bg-dark-blue bg-opacity-80"
+          class="flex h-screen max-h-full max-w-full flex-col items-center justify-center bg-dark-blue bg-opacity-80"
           ref={imageDialogRef}
           onClick={() => {
             setIsImageDialogOpen(false);
@@ -203,6 +203,12 @@ const Projects = () => {
             }, 300);
           }}
         >
+          <p
+            class={`absolute bottom-[20%] font-body text-green transition-opacity duration-300 ${isImageDialogOpen ? "opacity-75" : "opacity-0"}`}
+          >
+            Tap anywhere to close
+          </p>
+
           <img
             alt=""
             class={`h-auto w-full rounded px-4 transition duration-300 ease-in-out ${isImageDialogOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}

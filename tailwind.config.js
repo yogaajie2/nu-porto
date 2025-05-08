@@ -11,7 +11,6 @@ export default {
         "fade-in-project-summary": "fade-in 500ms 1.5s forwards",
         "fade-in-section": "fade-in 500ms forwards",
         opening: "opening 1.5s",
-        "slide-down": "slide-down 0.5s 2s both, fade-in 0.5s 2s both",
 
         "slide-down-subtitle":
           "slide-down-subtitle 0.5s 2s both, fade-in 0.5s 2s both",
@@ -32,11 +31,6 @@ export default {
           "50%": { opacity: "1", left: "50%" },
           "75%": { opacity: "1", left: "50%" },
           "100%": { opacity: "1", left: "0%" },
-        },
-
-        "slide-down": {
-          "0%": { top: "-4rem" },
-          "100%": { top: "0rem" },
         },
 
         "slide-down-subtitle": {

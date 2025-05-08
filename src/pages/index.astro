@@ -27,7 +27,7 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
       class="glow flex flex-col items-center justify-center bg-dark-blue py-4 text-xs text-green lg:text-base"
     >
       <header
-        class="fixed z-20 hidden w-screen animate-slide-down font-heading text-xl lg:block"
+        class="fixed top-0 z-20 hidden w-screen font-heading text-xl opacity-0 transition-opacity duration-500 lg:block"
       >
         <nav class="mx-auto flex w-1/2 items-center text-center">
           <a class="nav-link group w-1/3 py-8" href="#about"
@@ -376,20 +376,27 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
     io.observe(element);
   });
 
-  // Mobile navbar
-  const navbar = document.querySelector("#mobileNavbar");
+  // Navbars
+  const mobileNavbar = document.querySelector("#mobileNavbar"),
+    header = document.querySelector("header");
+
   let scrollPos = 0;
 
   setTimeout(() => {
-    navbar?.classList.remove("translate-y-full");
+    header?.classList.remove("opacity-0");
+    mobileNavbar?.classList.remove("translate-y-full");
   }, 2000);
 
   window.addEventListener("scroll", () => {
     // Detects new state and compares it with the new one
     if (document.body.getBoundingClientRect().top > scrollPos) {
-      navbar?.classList.remove("translate-y-full");
+      header?.classList.remove("opacity-0");
+      header?.classList.add("opacity-100");
+      mobileNavbar?.classList.remove("translate-y-full");
     } else {
-      navbar?.classList.add("translate-y-full");
+      header?.classList.remove("opacity-100");
+      header?.classList.add("opacity-0");
+      mobileNavbar?.classList.add("translate-y-full");
     }
 
     // Saves the new position for iteration.

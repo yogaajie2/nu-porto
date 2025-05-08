@@ -146,36 +146,6 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
           Let's work together
         </h3>
 
-        <!-- Temp hidden -->
-        <!-- <form
-          action=""
-          class="grid h-1/2 gap-8 lg:mt-12 lg:grid-cols-2"
-          method="post"
-        >
-          <input
-            class="border-b-2 bg-transparent outline-none"
-            id="name"
-            name="name"
-            placeholder="Your name"
-            type="text"
-          />
-
-          <input
-            class="border-b-2 bg-transparent outline-none"
-            id="email"
-            name="email"
-            placeholder="Your email address"
-            type="email"
-          />
-
-          <textarea
-            class="col-span-full border-b-2 bg-transparent outline-none"
-            id="message"
-            name="message"
-            placeholder="What do you have in mind?"
-            rows="3"></textarea>
-        </form> -->
-
         <nav class="mt-8 flex flex-col items-center gap-4">
           <a
             class="flex w-fit min-w-80 items-center justify-center gap-4 rounded bg-dark-blue-lighter px-8 py-4 font-heading text-base lg:text-xl"
@@ -371,30 +341,12 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
 </html>
 
 <script>
-  // Cursor glow effect
-  /* const bg = document.querySelector("main");
-
-  bg?.addEventListener("mousemove", function (event) {
-    // Calculate x and y positions
-    var x = event.pageX - this.offsetLeft;
-    var y = event.pageY - this.offsetTop;
-
-    // Apply the gradient
-    this.style.background = `radial-gradient(circle at ${x}px ${y}px, #123625 0%, #0f172a 350px)`;
-  });
-
-  bg?.addEventListener("mouseleave", function () {
-    // Reset the background color
-    this.style.background = "#0f172a";
-  }); */
-
   // Nav links hover effects
   const navLinks = document.querySelectorAll(".nav-link");
   const titleSlash = document.querySelector("#titleSlash");
 
   navLinks.forEach((navLink) =>
     navLink.addEventListener("mouseover", () => {
-      console.log("over");
       titleSlash?.classList.add("opacity-0");
     })
   );

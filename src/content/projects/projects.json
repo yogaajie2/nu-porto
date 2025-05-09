@@ -3,21 +3,27 @@
     "description": "Nunc posuere gravida velit, laoreet rutrum mauris vestibulum sit amet. Nam cursus pharetra ante, sed posuere mauris mattis non. Maecenas at tellus ac magna porta mollis. Quisque eleifend posuere tortor sit amet fringilla. In malesuada, dui sit amet scelerisque vehicula, justo est aliquam odio, quis blandit diam quam ut libero. Sed ut urna diam. Vivamus vel malesuada ex, at posuere dolor.\n\nAliquam cursus dictum felis quis ultricies. Quisque tristique risus sagittis risus eleifend aliquet. Nullam leo nulla, volutpat faucibus arcu ut, sagittis pharetra nunc. Sed sagittis rutrum felis, non dignissim diam lacinia sit amet. Maecenas fermentum enim vulputate, consectetur erat sed, condimentum leo. Vivamus scelerisque eros a ligula ornare interdum sed quis turpis. Nulla nulla mi, laoreet eu luctus at, volutpat non mauris. Vestibulum non ligula mauris. Duis imperdiet accumsan suscipit.",
 
     "images": [
-      "https://picsum.photos/seed/a/400",
-      "https://picsum.photos/seed/b/400",
-      "https://picsum.photos/seed/c/400",
-      "https://picsum.photos/seed/d/400",
-      "https://picsum.photos/seed/e/400",
-      "https://picsum.photos/seed/f/400",
-      "https://picsum.photos/seed/g/400",
-      "https://picsum.photos/seed/h/400"
+      "https://i.imgur.com/1pfyexg.jpeg",
+      "https://i.imgur.com/xTyVtG3.jpeg",
+      "https://i.imgur.com/lmT5pxc.jpeg",
+      "https://i.imgur.com/2zkzvt6.jpeg",
+      "https://i.imgur.com/IEM1oiI.jpeg",
+      "https://i.imgur.com/VmPTk8h.jpeg",
+      "https://i.imgur.com/RCuCc9Z.jpeg",
+      "https://i.imgur.com/SVugJ0r.jpeg",
+      "https://i.imgur.com/aq7FLR5.jpeg",
+      "https://i.imgur.com/Kr1fCRo.jpeg",
+      "https://i.imgur.com/fTWRIoU.jpeg",
+      "https://i.imgur.com/PFqb3C3.jpeg",
+      "https://i.imgur.com/bfAH4v6.jpeg",
+      "https://i.imgur.com/itOZgyO.jpeg"
     ],
 
     "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
-    "summary": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
-    "thumbnail": "https://picsum.photos/seed/1/350",
-    "title": "Lorem Ipsum 1",
-    "year": "2025"
+    "summary": "Build & design a product showcase and company profile website, complete with its own content management system.",
+    "thumbnail": "https://i.imgur.com/1pfyexg.jpeg",
+    "title": "Felini Furniture",
+    "year": "2023"
   },
 
   {

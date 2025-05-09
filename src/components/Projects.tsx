@@ -25,7 +25,7 @@ const Projects = () => {
         <h2 class="flex w-0 overflow-hidden whitespace-nowrap">Projects</h2>
       </div>
 
-      <nav class="absolute left-0 top-[200px] z-10 flex w-full items-center justify-between gap-4 px-10 text-green lg:left-1/2 lg:top-[30%] lg:w-1/2 lg:-translate-x-1/2">
+      <nav class="absolute left-0 top-[200px] z-10 flex w-full items-center justify-between gap-4 px-10 text-green lg:left-1/2 lg:top-[30%] lg:w-2/3 lg:-translate-x-1/2">
         <div class="swiper-button-prev cursor-pointer rounded border-2 border-green border-opacity-0 bg-dark-blue bg-opacity-50 p-1 transition-all duration-200 hover:border-opacity-100 lg:bg-dark-blue-lighter lg:bg-opacity-100">
           <svg
             class="size-6 lg:size-8"
@@ -65,9 +65,14 @@ const Projects = () => {
         <div class="swiper-wrapper">
           {projects.map((project, index) => (
             <div class="swiper-slide !flex flex-col lg:items-center">
-              <img alt="" class="rounded" src={project.thumbnail} />
+              <img
+                alt=""
+                class="rounded"
+                loading="lazy"
+                src={project.thumbnail}
+              />
 
-              <section class="mt-3 lg:mt-12 lg:w-2/3">
+              <section class="mt-3 lg:mt-12">
                 <div class="flex font-heading text-xl lg:text-2xl">
                   <h2 class="w-0 overflow-hidden whitespace-nowrap">
                     {project.title}
@@ -103,7 +108,7 @@ const Projects = () => {
               </section>
 
               <button
-                class="mt-auto w-full rounded border-2 border-green border-opacity-0 bg-dark-blue-lighter py-4 font-heading text-base transition-all duration-200 hover:border-opacity-100 lg:mb-8 lg:w-2/3 lg:text-xl"
+                class="mt-auto w-full rounded border-2 border-green border-opacity-0 bg-dark-blue-lighter py-4 font-heading text-base transition-all duration-200 hover:border-opacity-100 lg:mb-8 lg:text-xl"
                 onClick={() => {
                   setSelectedProject(index);
                   projectDialogRef.current?.showModal();
@@ -122,7 +127,7 @@ const Projects = () => {
         ref={projectDialogRef}
       >
         <button
-          class="absolute right-0 top-0 flex items-center gap-2 p-6 focus-visible:outline-none"
+          class="absolute right-0 top-0 flex items-center gap-2 p-6 focus-visible:outline-none lg:right-[15%] lg:top-[10%]"
           onClick={() => {
             setIsProjectDialogOpen(false);
 
@@ -153,12 +158,16 @@ const Projects = () => {
           class={`relative mt-16 h-full w-full overflow-y-scroll rounded-xl bg-dark-blue-lighter p-6 transition duration-300 ease-in-out focus-visible:outline-none lg:top-1/2 lg:m-auto lg:h-2/3 lg:w-2/3 lg:-translate-y-1/2 ${isProjectDialogOpen ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}`}
           style={{ scrollbarWidth: "none" }}
         >
-          <div class="flex font-heading text-xl lg:text-2xl">
+          <div class="flex font-heading text-xl lg:gap-2 lg:text-2xl">
             <h2 class="overflow-hidden whitespace-nowrap">
               {projects[selectedProject].title}
             </h2>
 
-            <span class="ml-auto">{projects[selectedProject].year}</span>
+            <span class="hidden lg:block">-</span>
+
+            <span class="ml-auto lg:ml-0">
+              {projects[selectedProject].year}
+            </span>
           </div>
 
           <p class="mt-4 whitespace-pre-line font-body lg:mt-4">
@@ -168,7 +177,7 @@ const Projects = () => {
           <section class="mt-8 lg:mt-16">
             <h2 class="flex font-heading text-xl lg:text-2xl">Gallery</h2>
 
-            <div class="mb-16 mt-4 grid grid-cols-2 gap-4 lg:mt-12 lg:grid-cols-3 lg:gap-8">
+            <div class="mb-16 mt-4 grid grid-cols-2 gap-4 lg:mt-12 lg:gap-8">
               {projects[selectedProject].images.map((image) => (
                 <img
                   alt=""
@@ -205,14 +214,14 @@ const Projects = () => {
           </p>
 
           <p
-            class={`absolute bottom-[20%] hidden font-body text-green transition-opacity duration-300 lg:block ${isImageDialogOpen ? "opacity-75" : "opacity-0"}`}
+            class={`absolute bottom-8 hidden font-body text-green transition-opacity duration-300 lg:block ${isImageDialogOpen ? "opacity-75" : "opacity-0"}`}
           >
             Click anywhere to close
           </p>
 
           <img
             alt=""
-            class={`h-auto w-full rounded px-4 transition duration-300 ease-in-out lg:w-auto ${isImageDialogOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
+            class={`h-auto w-full rounded px-4 transition duration-300 ease-in-out lg:max-h-[85vh] lg:w-auto ${isImageDialogOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
             src={selectedImage}
           />
         </dialog>

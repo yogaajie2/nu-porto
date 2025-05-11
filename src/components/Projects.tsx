@@ -67,7 +67,7 @@ const Projects = () => {
             <div class="swiper-slide !flex flex-col lg:items-center">
               <img
                 alt=""
-                class="rounded"
+                class="h-[35vh] rounded object-cover"
                 loading="lazy"
                 src={project.thumbnail}
               />
@@ -177,14 +177,13 @@ const Projects = () => {
           <section class="mt-8 lg:mt-16">
             <h2 class="flex font-heading text-xl lg:text-2xl">Gallery</h2>
 
-            <div class="mb-16 mt-4 grid grid-cols-2 gap-4 lg:mt-12 lg:gap-8">
+            <div class="mb-16 mt-4 grid grid-cols-2 gap-4 lg:mt-12 lg:grid-cols-3 lg:gap-6">
               {projects[selectedProject].images.map((image) => (
                 <img
                   alt=""
-                  class="mx-auto rounded"
-                  height="200"
+                  class="mx-auto h-[20vh] w-full rounded object-cover"
+                  loading="lazy"
                   src={image}
-                  width="200"
                   onClick={() => {
                     setSelectedImage(image);
                     imageDialogRef.current?.showModal();
@@ -208,7 +207,7 @@ const Projects = () => {
           }}
         >
           <p
-            class={`absolute bottom-[20%] font-body text-green transition-opacity duration-300 lg:hidden ${isImageDialogOpen ? "opacity-75" : "opacity-0"}`}
+            class={`absolute bottom-4 font-body text-green transition-opacity duration-300 lg:hidden ${isImageDialogOpen ? "opacity-75" : "opacity-0"}`}
           >
             Tap anywhere to close
           </p>
@@ -221,7 +220,8 @@ const Projects = () => {
 
           <img
             alt=""
-            class={`h-auto w-full rounded px-4 transition duration-300 ease-in-out lg:max-h-[85vh] lg:w-auto ${isImageDialogOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
+            class={`h-auto max-h-[80vh] w-full rounded px-4 transition duration-300 ease-in-out lg:max-h-[85vh] lg:w-auto ${isImageDialogOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
+            loading="lazy"
             src={selectedImage}
           />
         </dialog>

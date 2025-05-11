@@ -196,7 +196,7 @@ const Projects = () => {
         </div>
 
         <dialog
-          class={`flex h-screen max-h-full max-w-full flex-col items-center justify-center bg-dark-blue bg-opacity-80 transition-opacity duration-300 lg:-z-10 lg:w-screen ${isImageDialogOpen ? "opacity-100" : "opacity-0"}`}
+          class={`flex h-screen max-h-full w-screen max-w-full flex-col items-center justify-center bg-dark-blue bg-opacity-80 transition-opacity duration-300 lg:-z-10 ${isImageDialogOpen ? "opacity-100" : "opacity-0"}`}
           ref={imageDialogRef}
           onClick={() => {
             setIsImageDialogOpen(false);
@@ -220,7 +220,7 @@ const Projects = () => {
 
           <img
             alt=""
-            class={`h-auto max-h-[80vh] w-full rounded px-4 transition duration-300 ease-in-out lg:max-h-[85vh] lg:w-auto ${isImageDialogOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
+            class={`h-auto max-h-[80vh] w-auto rounded object-contain px-4 transition duration-300 ease-in-out lg:max-h-[85vh] lg:w-auto ${isImageDialogOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
             loading="lazy"
             src={selectedImage}
           />

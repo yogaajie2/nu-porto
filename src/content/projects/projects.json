@@ -30,41 +30,70 @@
     "description": "Proin ex velit, finibus non scelerisque at, egestas at erat. Duis auctor malesuada nibh sed tincidunt. Integer fringilla vitae leo eget lobortis Pellentesque pellentesque aliquam nulla vel consequat. Sed et sapien congue, ultricies massa in, molestie urna. Curabitur ac eleifend nibh. Sed porta risus sit amet velit aliquet, ac tincidunt orci rutrum. Aenean sit amet turpis et metus tincidunt viverra. Etiam elementum urna non tellus tempus lobortis. Vestibulum a gravida mauris. Morbi a dolor vel augue semper venenatis pulvinar nec dui.\n\nInteger sed neque est. Nunc egestas ultrices mollis. Ut at ex iaculis dolor aliquet malesuada. Morbi lectus augue, fermentum at nulla eget, dapibus bibendum orci. Etiam et ullamcorper lectus. Ut vehicula, lacus nec ornare dictum, lectus arcu venenatis justo, at blandit est augue in augue. Donec id egestas nisl, euismod accumsan urna. Nullam quis est nisi. Curabitur eu dui justo. Nam leo dui, pellentesque sit amet rutrum ut, euismod eu mi. Donec sagittis finibus interdum. Donec ac dui ac nisl venenatis gravida quis at est. Ut consectetur et purus sed aliquam. Etiam suscipit dictum lacus vitae lobortis.",
 
     "images": [
-      "https://picsum.photos/seed/i/400",
-      "https://picsum.photos/seed/j/400",
-      "https://picsum.photos/seed/k/400",
-      "https://picsum.photos/seed/l/400",
-      "https://picsum.photos/seed/m/400",
-      "https://picsum.photos/seed/n/400",
-      "https://picsum.photos/seed/o/400",
-      "https://picsum.photos/seed/p/400"
+      "https://i.imgur.com/g4aqAKH.png",
+      "https://i.imgur.com/l8yAwl8.png",
+      "https://i.imgur.com/VpQEKcE.png",
+      "https://i.imgur.com/by8icVh.png",
+      "https://i.imgur.com/l4Z49nS.png",
+      "https://i.imgur.com/nfr70WT.png",
+      "https://i.imgur.com/7OPO2uG.png",
+      "https://i.imgur.com/CBJ3Vx6.png"
     ],
 
     "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
-    "summary": "Sed in augue neque. Vestibulum et est bibendum, laoreet massa nec, fringilla urna. Suspendisse tincidunt nulla ut aliquet convallis.",
-    "thumbnail": "https://picsum.photos/seed/2/350",
-    "title": "Lorem Ipsum 2",
-    "year": "2025"
+    "summary": "Build a property management SaaS, complete with its own booking engine.",
+    "thumbnail": "https://i.imgur.com/g4aqAKH.png",
+    "title": "Hoteely",
+    "year": "2022"
   },
 
   {
     "description": "Suspendisse eget cursus ex. Fusce efficitur mi ipsum, id consectetur sapien sollicitudin eu. Morbi eleifend lorem ac ullamcorper hendrerit. Nunc facilisis est at viverra mollis. Mauris a nulla sem. Pellentesque quis lorem quis nulla posuere iaculis faucibus ut urna. Pellentesque nunc sapien, pharetra id nisi vitae, scelerisque congue nibh. Nunc viverra metus ac sem vehicula, ac luctus augue iaculis. Nunc mattis, neque sit amet interdum facilisis, urna ligula mollis urna, nec convallis neque felis vel justo.\n\nDonec maximus erat erat, quis porta nunc porta in. Nunc consectetur porttitor felis, a consequat risus porta tempus. Quisque tristique ex sed faucibus mollis. Nunc odio elit, accumsan egestas lectus sed, pellentesque tincidunt sem. Vivamus dapibus lacinia magna non ultrices. Sed vel ligula ipsum. Aenean at tortor et ligula ornare fringilla ac ac purus. Sed scelerisque sem eget purus interdum ultrices. Suspendisse tempor tellus vel mauris commodo blandit. Maecenas euismod mi ipsum, quis consectetur nisi convallis et.",
 
     "images": [
-      "https://picsum.photos/seed/q/400",
-      "https://picsum.photos/seed/r/400",
-      "https://picsum.photos/seed/s/400",
-      "https://picsum.photos/seed/t/400",
-      "https://picsum.photos/seed/u/400",
-      "https://picsum.photos/seed/v/400",
-      "https://picsum.photos/seed/w/400",
-      "https://picsum.photos/seed/x/400"
+      "https://i.imgur.com/E9iYEH1.png",
+      "https://i.imgur.com/ie2bQM7.png",
+      "https://i.imgur.com/MjA35ld.png",
+      "https://i.imgur.com/irDlWfb.png",
+      "https://i.imgur.com/cwm93wh.png"
     ],
 
     "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
-    "summary": "Vestibulum interdum in nulla vitae molestie. Phasellus faucibus mi eget mattis gravida. Integer a magna nulla. In hac habitasse platea.",
-    "thumbnail": "https://picsum.photos/seed/3/350",
-    "title": "Lorem Ipsum 3",
-    "year": "2025"
+    "summary": "Build a real-time sports live score web app.",
+    "thumbnail": "https://i.imgur.com/E9iYEH1.png",
+    "title": "Flygoal",
+    "year": "2019"
+  },
+
+  {
+    "description": "Suspendisse eget cursus ex. Fusce efficitur mi ipsum, id consectetur sapien sollicitudin eu. Morbi eleifend lorem ac ullamcorper hendrerit. Nunc facilisis est at viverra mollis. Mauris a nulla sem. Pellentesque quis lorem quis nulla posuere iaculis faucibus ut urna. Pellentesque nunc sapien, pharetra id nisi vitae, scelerisque congue nibh. Nunc viverra metus ac sem vehicula, ac luctus augue iaculis. Nunc mattis, neque sit amet interdum facilisis, urna ligula mollis urna, nec convallis neque felis vel justo.\n\nDonec maximus erat erat, quis porta nunc porta in. Nunc consectetur porttitor felis, a consequat risus porta tempus. Quisque tristique ex sed faucibus mollis. Nunc odio elit, accumsan egestas lectus sed, pellentesque tincidunt sem. Vivamus dapibus lacinia magna non ultrices. Sed vel ligula ipsum. Aenean at tortor et ligula ornare fringilla ac ac purus. Sed scelerisque sem eget purus interdum ultrices. Suspendisse tempor tellus vel mauris commodo blandit. Maecenas euismod mi ipsum, quis consectetur nisi convallis et.",
+
+    "images": [
+      "https://i.imgur.com/Y53XI6h.png",
+      "https://i.imgur.com/zemsu6e.png",
+      "https://i.imgur.com/Pupw8Sl.png",
+      "https://i.imgur.com/OF9zpRb.png"
+    ],
+
+    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
+    "summary": "Build a Wordpress based soccer news site.",
+    "thumbnail": "https://i.imgur.com/Y53XI6h.png",
+    "title": "Warta Bola",
+    "year": "2019"
+  },
+
+  {
+    "description": "Suspendisse eget cursus ex. Fusce efficitur mi ipsum, id consectetur sapien sollicitudin eu. Morbi eleifend lorem ac ullamcorper hendrerit. Nunc facilisis est at viverra mollis. Mauris a nulla sem. Pellentesque quis lorem quis nulla posuere iaculis faucibus ut urna. Pellentesque nunc sapien, pharetra id nisi vitae, scelerisque congue nibh. Nunc viverra metus ac sem vehicula, ac luctus augue iaculis. Nunc mattis, neque sit amet interdum facilisis, urna ligula mollis urna, nec convallis neque felis vel justo.\n\nDonec maximus erat erat, quis porta nunc porta in. Nunc consectetur porttitor felis, a consequat risus porta tempus. Quisque tristique ex sed faucibus mollis. Nunc odio elit, accumsan egestas lectus sed, pellentesque tincidunt sem. Vivamus dapibus lacinia magna non ultrices. Sed vel ligula ipsum. Aenean at tortor et ligula ornare fringilla ac ac purus. Sed scelerisque sem eget purus interdum ultrices. Suspendisse tempor tellus vel mauris commodo blandit. Maecenas euismod mi ipsum, quis consectetur nisi convallis et.",
+
+    "images": [
+      "https://i.imgur.com/DRapgBv.png",
+      "https://i.imgur.com/NuIeG2n.png"
+    ],
+
+    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
+    "summary": "Build a movies and series online streaming web app.",
+    "thumbnail": "https://i.imgur.com/DRapgBv.png",
+    "title": "NeoXXI",
+    "year": "2019"
   }
 ]

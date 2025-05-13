@@ -85,7 +85,7 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
 
       <!-- About -->
       <section
-        class="container flex h-screen snap-start flex-col justify-between py-4 lg:py-8"
+        class="container flex h-screen snap-start flex-col justify-between py-4 lg:block lg:py-8"
         id="about"
       >
         <div
@@ -99,30 +99,46 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
           <h2 class="flex w-0 overflow-hidden whitespace-nowrap">About</h2>
         </div>
 
-        <Image
-          alt=""
-          class="invisible hue-rotate-[328deg] lg:h-[500px]"
-          src={photo}
-        />
+        <div
+          class="mt-8 flex h-full flex-col items-center justify-between lg:my-auto lg:flex-row"
+        >
+          <Image
+            alt=""
+            class="h-[300px] w-auto object-contain opacity-0 hue-rotate-[328deg] transition-opacity delay-1000 duration-500 lg:h-[450px]"
+            src={photo}
+          />
 
-        <div>
-          <h3 class="font-heading text-4xl">Hello, world.</h3>
+          <div class="lg:w-1/2">
+            <h3
+              class="w-0 overflow-hidden whitespace-nowrap font-heading text-4xl lg:text-5xl"
+            >
+              Hello, world.
+            </h3>
 
-          <div
-            class="mt-6 flex flex-col gap-8 font-body text-sm lg:mt-12 lg:text-xl"
-          >
-            <p>
-              My name is Yoga Prasetya. I am a full stack web and apps developer
-              based in the Greater Jakarta Area, Indonesia with more than 5
-              years of professional experience working on projects both
-              personally and together in teams.
-            </p>
+            <div
+              class="mt-4 flex flex-col gap-8 font-body text-sm lg:mt-12 lg:text-xl"
+            >
+              <p class="opacity-0" style="animation-delay: 2.2s;">
+                My name is Yoga Prasetya — a full stack web and app developer
+                based in Jakarta, Indonesia with over 5 years of professional
+                experience. I’ve worked on a wide range of projects both
+                independently and collaboratively with remote, multicultural
+                teams and clients.
+              </p>
 
-            <p>
-              Fast learning and highly adaptable, I strive to incorporate new &
-              emerging technologies to my tech stack. Making every project as an
-              opportunity to learn, collaborate, and further improve my skills.
-            </p>
+              <p class="opacity-0" style="animation-delay: 2.4s;">
+                I'm fast-learning, adaptable, and passionate about applying
+                modern technologies to real-world problems. I'm especially
+                interested in remote opportunities and have hands-on experience
+                integrating AI services — including chat and voice agents, as
+                well as speech-to-text — into customer support platforms.
+              </p>
+
+              <p class="opacity-0" style="animation-delay: 2.6s;">
+                I believe Every project is a chance to learn, grow, and build
+                something meaningful.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -367,8 +383,10 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
     })
   );
 
-  // Headings intersection observer
-  const io = new IntersectionObserver((entries) => {
+  // Intersection observers
+  const headings = document.querySelectorAll(".section-name");
+
+  const headingsObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.intersectionRatio > 0) {
         const name = entry.target.querySelector("h2");
@@ -380,11 +398,29 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
     });
   });
 
-  const elements = document.querySelectorAll(".section-name");
-
-  elements.forEach((element) => {
-    io.observe(element);
+  headings.forEach((element) => {
+    headingsObserver.observe(element);
   });
+
+  const aboutObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const about = document.querySelector("#about"),
+          photo = about?.querySelector("img"),
+          hello = about?.querySelector("h3"),
+          texts = about?.querySelectorAll("p");
+
+        photo?.classList.replace("opacity-0", "opacity-100");
+        hello?.classList.add("animate-typed-title");
+
+        texts?.forEach((text) => {
+          text.classList.add("animate-[fade-in_500ms_forwards]");
+        });
+      }
+    });
+  });
+
+  aboutObserver.observe(headings[0]);
 
   // Navbars
   const mobileNavbar = document.querySelector("#mobileNavbar"),
@@ -403,6 +439,13 @@ import photo from "../images/profile-styled-circle-alt-compressed.png";
       header?.classList.remove("opacity-0");
       header?.classList.add("opacity-100");
       mobileNavbar?.classList.remove("translate-y-full");
+
+      // Hide again after 5 seconds
+      setTimeout(() => {
+        header?.classList.remove("opacity-100");
+        header?.classList.add("opacity-0");
+        mobileNavbar?.classList.add("translate-y-full");
+      }, 5000);
     } else {
       header?.classList.remove("opacity-100");
       header?.classList.add("opacity-0");

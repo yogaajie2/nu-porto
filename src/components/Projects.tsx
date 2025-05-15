@@ -91,13 +91,13 @@ const Projects = () => {
                   Tech stacks used
                 </p>
 
-                <div class="group mt-4 flex flex-wrap gap-2">
+                <div class="group mt-4 flex flex-wrap justify-center gap-x-2 gap-y-3">
                   {project.stacks.map((stack, index) => {
                     const delay = 2000 + index * 200;
 
                     return (
                       <p
-                        class="rounded-full border-[1px] border-green px-2 py-1 opacity-0 group-[.active]:animate-[fade-in_500ms_forwards]"
+                        class="min-w-[75px] rounded-full border-[1px] border-green px-2 py-1 text-center opacity-0 group-[.active]:animate-[fade-in_500ms_forwards] lg:min-w-[100px] lg:px-4"
                         style={`animation-delay: ${delay}ms;`}
                       >
                         {stack}

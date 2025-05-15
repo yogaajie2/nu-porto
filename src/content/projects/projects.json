@@ -1,6 +1,6 @@
 [
   {
-    "description": "Nunc posuere gravida velit, laoreet rutrum mauris vestibulum sit amet. Nam cursus pharetra ante, sed posuere mauris mattis non. Maecenas at tellus ac magna porta mollis. Quisque eleifend posuere tortor sit amet fringilla. In malesuada, dui sit amet scelerisque vehicula, justo est aliquam odio, quis blandit diam quam ut libero. Sed ut urna diam. Vivamus vel malesuada ex, at posuere dolor.\n\nAliquam cursus dictum felis quis ultricies. Quisque tristique risus sagittis risus eleifend aliquet. Nullam leo nulla, volutpat faucibus arcu ut, sagittis pharetra nunc. Sed sagittis rutrum felis, non dignissim diam lacinia sit amet. Maecenas fermentum enim vulputate, consectetur erat sed, condimentum leo. Vivamus scelerisque eros a ligula ornare interdum sed quis turpis. Nulla nulla mi, laoreet eu luctus at, volutpat non mauris. Vestibulum non ligula mauris. Duis imperdiet accumsan suscipit.",
+    "description": "Felini Furniture is a full-featured product showcase and company profile website designed to highlight a local furniture brand’s catalog and online presence. In addition to standard company profile sections, the site includes a shop page where visitors can browse products and easily connect to e-commerce platforms or initiate purchases via WhatsApp.\n\nThe project was built entirely by myself from design and development to testing, deployment, and infrastructure setup — including hosting, domain configuration, and company email. The frontend is built with React, Next.js, and Tailwind CSS, delivering a fast and responsive user experience.\n\nTo support dynamic content, I developed a custom content management system using Strapi, Node.js, and MySQL. This CMS allows the client to manage pages, product listings, SEO settings, and user roles, providing full control over their site without technical involvement.",
 
     "images": [
       "https://i.imgur.com/1pfyexg.jpeg",
@@ -19,15 +19,24 @@
       "https://i.imgur.com/itOZgyO.jpeg"
     ],
 
-    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
-    "summary": "Build & design a product showcase and company profile website, complete with its own content management system.",
+    "stacks": [
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Strapi",
+      "MySQL",
+      "Node.js"
+    ],
+
+    "summary": "Felini Furniture is a fully custom company profile and product showcase website with a built-in CMS, developed end-to-end using Next.js and Strapi.",
     "thumbnail": "https://i.imgur.com/1pfyexg.jpeg",
     "title": "Felini Furniture",
     "year": "2023"
   },
 
   {
-    "description": "Proin ex velit, finibus non scelerisque at, egestas at erat. Duis auctor malesuada nibh sed tincidunt. Integer fringilla vitae leo eget lobortis Pellentesque pellentesque aliquam nulla vel consequat. Sed et sapien congue, ultricies massa in, molestie urna. Curabitur ac eleifend nibh. Sed porta risus sit amet velit aliquet, ac tincidunt orci rutrum. Aenean sit amet turpis et metus tincidunt viverra. Etiam elementum urna non tellus tempus lobortis. Vestibulum a gravida mauris. Morbi a dolor vel augue semper venenatis pulvinar nec dui.\n\nInteger sed neque est. Nunc egestas ultrices mollis. Ut at ex iaculis dolor aliquet malesuada. Morbi lectus augue, fermentum at nulla eget, dapibus bibendum orci. Etiam et ullamcorper lectus. Ut vehicula, lacus nec ornare dictum, lectus arcu venenatis justo, at blandit est augue in augue. Donec id egestas nisl, euismod accumsan urna. Nullam quis est nisi. Curabitur eu dui justo. Nam leo dui, pellentesque sit amet rutrum ut, euismod eu mi. Donec sagittis finibus interdum. Donec ac dui ac nisl venenatis gravida quis at est. Ut consectetur et purus sed aliquam. Etiam suscipit dictum lacus vitae lobortis.",
+    "description": "Hoteely is a comprehensive SaaS platform for property management, designed to serve hotel owners, property managers, and staff with an all-in-one solution for managing bookings, operations, and revenue. The system includes a custom-built booking engine that integrates seamlessly with popular reservation sources like Booking.com, Agoda, and more, allowing users to manage reservations across multiple channels from a single interface.\n\nThe platform is divided into two core systems: a frontend application for end users and a backend system for internal developers. On the frontend, users can manage multiple properties with features such as tax and policy configuration, room type and inventory management, rate and promotion controls, availability calendars, and staff assignments. It also includes robust modules for billing and invoicing, as well as user and role management to tailor access levels across teams.\n\nThe backend system is used for internal administration and configuration. It provides control over global app settings such as supported languages, feature toggles, and subscription management, enabling a modular approach to platform customization.\n\nI led the frontend development team, working closely with UI/UX designers, backend developers, and QA engineers. I was also responsible for creating a shared component design system using Bit, which helped streamline development, enforce consistency, and improve team collaboration. The frontend was built using TypeScript, React, Next.js, and Sass, ensuring a performant and scalable architecture. Throughout the project, I collaborated with a diverse, multinational team, contributing to a highly communicative and culturally rich development environment.",
 
     "images": [
       "https://i.imgur.com/g4aqAKH.png",
@@ -40,15 +49,38 @@
       "https://i.imgur.com/CBJ3Vx6.png"
     ],
 
-    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
-    "summary": "Build a property management SaaS, complete with its own booking engine.",
+    "stacks": ["JavaScript", "TypeScript", "React", "Next.js", "Sass", "Bit"],
+
+    "summary": "Hoteely is a full-featured property management SaaS platform with a custom booking engine. Built using TypeScript, React, Next.js and a component design system using Bit.",
+
     "thumbnail": "https://i.imgur.com/g4aqAKH.png",
     "title": "Hoteely",
     "year": "2022"
   },
 
   {
-    "description": "Suspendisse eget cursus ex. Fusce efficitur mi ipsum, id consectetur sapien sollicitudin eu. Morbi eleifend lorem ac ullamcorper hendrerit. Nunc facilisis est at viverra mollis. Mauris a nulla sem. Pellentesque quis lorem quis nulla posuere iaculis faucibus ut urna. Pellentesque nunc sapien, pharetra id nisi vitae, scelerisque congue nibh. Nunc viverra metus ac sem vehicula, ac luctus augue iaculis. Nunc mattis, neque sit amet interdum facilisis, urna ligula mollis urna, nec convallis neque felis vel justo.\n\nDonec maximus erat erat, quis porta nunc porta in. Nunc consectetur porttitor felis, a consequat risus porta tempus. Quisque tristique ex sed faucibus mollis. Nunc odio elit, accumsan egestas lectus sed, pellentesque tincidunt sem. Vivamus dapibus lacinia magna non ultrices. Sed vel ligula ipsum. Aenean at tortor et ligula ornare fringilla ac ac purus. Sed scelerisque sem eget purus interdum ultrices. Suspendisse tempor tellus vel mauris commodo blandit. Maecenas euismod mi ipsum, quis consectetur nisi convallis et.",
+    "description": "Momentum Design was my first personal portfolio website, built entirely from scratch to showcase my work, skills, and experience as a developer. It featured a multi-page layout with a clean, responsive design and a focus on subtle animations to create a smooth and engaging browsing experience.\n\nThe site was developed using Vue, Nuxt, and Tailwind CSS, with all aspects — from design and development to testing and deployment — handled by myself. This project served as both a personal branding tool and a hands-on exploration of modern frontend techniques at the time.",
+
+    "images": [
+      "https://i.imgur.com/cI3Gy3s.png",
+      "https://i.imgur.com/xT3S01G.png",
+      "https://i.imgur.com/hS6e9xc.png",
+      "https://i.imgur.com/pkUSRey.png",
+      "https://i.imgur.com/t1DYCl5.png",
+      "https://i.imgur.com/cxcROkL.png"
+    ],
+
+    "stacks": ["JavaScript", "Vue", "Nuxt", "Tailwind CSS", "Sass"],
+
+    "summary": "Momentum Design is the previous version of my portfolio website. It features a multi-page minimalist design built with Vue, Nuxt, and Tailwind CSS, with an emphasis on smooth animations and subtle motions.",
+
+    "thumbnail": "https://i.imgur.com/cI3Gy3s.png",
+    "title": "Momentum Design",
+    "year": "2021"
+  },
+
+  {
+    "description": "Flygoal is a real-time sports live score web application designed to deliver fast, detailed, and engaging updates for fans across multiple sports. The platform covers five sports — football, basketball, badminton, tennis, and e-sports — offering users up-to-the-minute live scores, past results, and upcoming match schedules.\n\nUsers can follow live matches in real-time with minute-by-minute event updates, live commentaries, chat threads, and even live streams when available. Each match page includes essential information such as team lineups, venue details, kickoff time, head-to-head stats, match status, and post-match analysis like player ratings and advanced statistics.\n\nBeyond individual matches, users can explore detailed league and tournament information including table standings, fixtures, past results, team news, and rankings. The app also supports tracking individual players, providing personalized insights and updates.\n\nFlygoal includes a user authentication system where users can sign up and follow their favorite teams, tournaments, or players. They receive personalized notifications about key events such as match start times, goals, and other important updates. The backend is powered by PHP Laravel and MySQL, with Firebase used for user authentication and delivering live notifications. The frontend was built using vanilla JavaScript, HTML, and CSS ensuring lightweight performance and broad browser compatibility.",
 
     "images": [
       "https://i.imgur.com/E9iYEH1.png",
@@ -58,42 +90,20 @@
       "https://i.imgur.com/cwm93wh.png"
     ],
 
-    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
-    "summary": "Build a real-time sports live score web app.",
+    "stacks": [
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Firebase"
+    ],
+
+    "summary": "Flygoal is a real-time multi-sport live score platform featuring rich match data, live updates, and personalized notifications — built using vanilla JavaScript, PHP Laravel, and Firebase.",
+
     "thumbnail": "https://i.imgur.com/E9iYEH1.png",
     "title": "Flygoal",
-    "year": "2019"
-  },
-
-  {
-    "description": "Suspendisse eget cursus ex. Fusce efficitur mi ipsum, id consectetur sapien sollicitudin eu. Morbi eleifend lorem ac ullamcorper hendrerit. Nunc facilisis est at viverra mollis. Mauris a nulla sem. Pellentesque quis lorem quis nulla posuere iaculis faucibus ut urna. Pellentesque nunc sapien, pharetra id nisi vitae, scelerisque congue nibh. Nunc viverra metus ac sem vehicula, ac luctus augue iaculis. Nunc mattis, neque sit amet interdum facilisis, urna ligula mollis urna, nec convallis neque felis vel justo.\n\nDonec maximus erat erat, quis porta nunc porta in. Nunc consectetur porttitor felis, a consequat risus porta tempus. Quisque tristique ex sed faucibus mollis. Nunc odio elit, accumsan egestas lectus sed, pellentesque tincidunt sem. Vivamus dapibus lacinia magna non ultrices. Sed vel ligula ipsum. Aenean at tortor et ligula ornare fringilla ac ac purus. Sed scelerisque sem eget purus interdum ultrices. Suspendisse tempor tellus vel mauris commodo blandit. Maecenas euismod mi ipsum, quis consectetur nisi convallis et.",
-
-    "images": [
-      "https://i.imgur.com/Y53XI6h.png",
-      "https://i.imgur.com/zemsu6e.png",
-      "https://i.imgur.com/Pupw8Sl.png",
-      "https://i.imgur.com/OF9zpRb.png"
-    ],
-
-    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
-    "summary": "Build a Wordpress based soccer news site.",
-    "thumbnail": "https://i.imgur.com/Y53XI6h.png",
-    "title": "Warta Bola",
-    "year": "2019"
-  },
-
-  {
-    "description": "Suspendisse eget cursus ex. Fusce efficitur mi ipsum, id consectetur sapien sollicitudin eu. Morbi eleifend lorem ac ullamcorper hendrerit. Nunc facilisis est at viverra mollis. Mauris a nulla sem. Pellentesque quis lorem quis nulla posuere iaculis faucibus ut urna. Pellentesque nunc sapien, pharetra id nisi vitae, scelerisque congue nibh. Nunc viverra metus ac sem vehicula, ac luctus augue iaculis. Nunc mattis, neque sit amet interdum facilisis, urna ligula mollis urna, nec convallis neque felis vel justo.\n\nDonec maximus erat erat, quis porta nunc porta in. Nunc consectetur porttitor felis, a consequat risus porta tempus. Quisque tristique ex sed faucibus mollis. Nunc odio elit, accumsan egestas lectus sed, pellentesque tincidunt sem. Vivamus dapibus lacinia magna non ultrices. Sed vel ligula ipsum. Aenean at tortor et ligula ornare fringilla ac ac purus. Sed scelerisque sem eget purus interdum ultrices. Suspendisse tempor tellus vel mauris commodo blandit. Maecenas euismod mi ipsum, quis consectetur nisi convallis et.",
-
-    "images": [
-      "https://i.imgur.com/DRapgBv.png",
-      "https://i.imgur.com/NuIeG2n.png"
-    ],
-
-    "stacks": ["JavaScript", "TypeScript", "Tailwind CSS", "Node.js"],
-    "summary": "Build a movies and series online streaming web app.",
-    "thumbnail": "https://i.imgur.com/DRapgBv.png",
-    "title": "NeoXXI",
     "year": "2019"
   }
 ]

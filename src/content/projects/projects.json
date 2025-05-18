@@ -1,5 +1,75 @@
 [
   {
+    "description": "Centerix Omnichannel is a powerful, enterprise-grade multi-channel customer support platform designed for large organizations with hundreds of agents across industries like banking, insurance, and finance. The platform empowers support agents, telemarketers, and collection teams with tools to manage customer communication across voice, chat, and messaging — while giving managers and supervisors comprehensive oversight and reporting capabilities.\n\nOne of the standout features of Centerix is its robust telephony system, built using SIP (Session Initiation Protocol) and WebRTC. It supports both manual and automated dialing, real-time call monitoring, call transfers, and supervisor coaching. The system also includes an IVR (Interactive Voice Response) menu, plus an AI-powered speech-to-text engine for transcribing conversations in real time, enhancing both accessibility and quality assurance.\n\nOn the messaging side, Centerix integrates with major channels such as WhatsApp, Facebook, Instagram, and email, enabling agents to manage conversations in a unified interface. The platform supports ticketing workflows, automated AI chatbots, and smart routing — ensuring efficient handling of high volumes of queries.\n\nFor performance management, Centerix includes a built-in QA and scoring system that evaluates agent performance based on pre-set criteria. It also offers powerful real-time dashboards and detailed reporting tools, enabling supervisors to track KPIs, campaign effectiveness, and individual agent productivity.\n\nI was deeply involved in the frontend development, building and integrating all UI components using JavaScript, React, JsSIP, WebRTC, and Socket.IO to support real-time telephony and messaging features. I also contributed significantly to the backend, working with Node.js, Express, and PostgreSQL, and played a key role in migrating the legacy C# + Microsoft SQL Server codebase into a modern, scalable Node.js + PostgreSQL backend. I developed and tested numerous APIs, ensuring a seamless transition while improving maintainability and performance.",
+
+    "images": [
+      "https://i.imgur.com/hpAXEXT.jpeg",
+      "https://i.imgur.com/zXMZcmA.jpeg",
+      "https://i.imgur.com/3H3Z0Qa.jpeg",
+      "https://i.imgur.com/UbDYwsT.png",
+      "https://i.imgur.com/9E7hFNl.jpeg",
+      "https://i.imgur.com/XVQ6rXJ.jpeg",
+      "https://i.imgur.com/JPEJCWu.jpeg",
+      "https://i.imgur.com/LwIavtL.jpeg",
+      "https://i.imgur.com/0j3fDIH.jpeg",
+      "https://i.imgur.com/sMvPQAS.jpeg",
+      "https://i.imgur.com/G1v3cE1.jpeg",
+      "https://i.imgur.com/cA4aZJk.jpeg",
+      "https://i.imgur.com/BEFp2Rh.jpeg",
+      "https://i.imgur.com/0Ic1qaF.jpeg",
+      "https://i.imgur.com/AggbsXt.jpeg",
+      "https://i.imgur.com/UgYzrj4.jpeg"
+    ],
+
+    "stacks": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Redux",
+      "JsSIP",
+      "WebRTC",
+      "Socket.IO"
+    ],
+
+    "summary": "Centerix Omnichannel is an enterprise-level customer support platform with integrated voice, messaging, QA, and reporting systems — where I led frontend development and contributed to backend migration from C# to Node.js, supporting real-time communications at scale.",
+    "thumbnail": "https://i.imgur.com/hpAXEXT.jpeg",
+    "title": "Centerix Omnichannel",
+    "year": "2023-on"
+  },
+
+  {
+    "description": "Centerix Field App is a cross-platform mobile application developed specifically for field agents involved in debt collection, customer surveys, and in-person follow-ups. Seamlessly integrated with Centerix Omnichannel, the app enables real-time task assignment, visit reporting, and agent location tracking — allowing managers to monitor field operations with precision and efficiency.\n\nThe app is equipped with a range of field specific features, including support for multiple photo and video captures per visit, Google Maps integration for location info and directions, geolocation tagging for media files to verify visit authenticity, and an integrated media compression system to ensure fast and lightweight uploads even on low-bandwidth connections. These capabilities help field agents report tasks quickly and reliably, while minimizing data usage.\n\nDesigned to support Android, iOS, and web, the frontend was developed using TypeScript and React, with Ionic Framework and Capacitor + Cordova for native builds and access to device features. The backend was built using Node.js, Express, and PostgreSQL, and the app was deployed using Ionic Appflow, enabling smooth live updates and rapid bug fixes without full redeployment.\n\nThis project was a solo effort — I was responsible for the entire app lifecycle, from UI/UX design and development to integration, testing, deployment, and ongoing maintenance.",
+
+    "images": [
+      "https://i.imgur.com/GXCnhTG.png",
+      "https://i.imgur.com/wN0V2jC.png",
+      "https://i.imgur.com/ZAtFopy.png",
+      "https://i.imgur.com/0AmVoNt.png",
+      "https://i.imgur.com/jFfx42h.png",
+      "https://i.imgur.com/xrQwXOE.png"
+    ],
+
+    "stacks": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Ionic",
+      "Capacitor",
+      "Cordova",
+      "Node.js",
+      "Express",
+      "PostgreSQL"
+    ],
+
+    "summary": "Centerix Field App is a cross-platform mobile tool for field collection agents, built with React, Ionic, and Node.js, featuring media capture, geolocation, and real-time integration — fully designed and developed by myself from start to finish.",
+    "thumbnail": "https://i.imgur.com/0AmVoNt.png",
+    "title": "Centerix Field App",
+    "year": "2024-on"
+  },
+
+  {
     "description": "Felini Furniture is a full-featured product showcase and company profile website designed to highlight a local furniture brand’s catalog and online presence. In addition to standard company profile sections, the site includes a shop page where visitors can browse products and easily connect to e-commerce platforms or initiate purchases via WhatsApp.\n\nThe project was built entirely by myself from design and development to testing, deployment, and infrastructure setup — including hosting, domain configuration, and company email. The frontend is built with React, Next.js, and Tailwind CSS, delivering a fast and responsive user experience.\n\nTo support dynamic content, I developed a custom content management system using Strapi, Node.js, and MySQL. This CMS allows the client to manage pages, product listings, SEO settings, and user roles, providing full control over their site without technical involvement.",
 
     "images": [

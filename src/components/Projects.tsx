@@ -78,7 +78,9 @@ const Projects = () => {
                     {project.title}
                   </h2>
 
-                  <span class="ml-auto opacity-0">{project.year}</span>
+                  <span class="ml-auto w-1/3 text-right opacity-0">
+                    {project.year}
+                  </span>
                 </div>
 
                 <p class="summary mt-2 font-body opacity-0 lg:mt-4">
